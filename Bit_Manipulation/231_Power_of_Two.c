@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+// an integer is a power of two when its binary representation has exactly 1 set bit in it
+// A set bit refers to a bit in the binary representation of a number that has a value of 1
 bool isPowerOfTwo(int n){
     size_t count = 0;
 
