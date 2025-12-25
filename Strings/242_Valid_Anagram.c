@@ -1,3 +1,12 @@
+/*
+ * File: 242_Valid_Anagram.c
+ * Author: Yuheng Zhang
+ * Description:
+ * Solution for LeetCode 242 "Valid Anagram".
+ * This file documents the optimization journey from an intuitive "Two-Array" approach 
+ * to a memory-efficient "Single-Array Net Zero" approach.
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
