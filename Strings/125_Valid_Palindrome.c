@@ -16,6 +16,11 @@
 #include <ctype.h>   // Required for isalnum() and tolower()
 #include <stdbool.h>
 
+// isalnum() functions the same as the commented code below
+// #define IS_ALPHANUM(c) ( ((c) >= '0' && (c) <= '9') || \
+                         ((c) >= 'a' && (c) <= 'z') || \
+                         ((c) >= 'A' && (c) <= 'Z') )
+
 bool isPalindrome(char* s){
     // Guard Clause: Handle NULL input safely
     if (!s) return false; 
