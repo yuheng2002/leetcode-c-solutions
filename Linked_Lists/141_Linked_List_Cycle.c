@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-/**
+/*
  * Definition for singly-linked list.
  */
 struct ListNode {
