@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h> // Required for malloc and NULL
 
-/**
+/*
  * Definition for singly-linked list.
  */
 struct ListNode {
