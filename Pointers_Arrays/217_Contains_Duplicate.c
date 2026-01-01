@@ -67,26 +67,43 @@ bool containsDuplicate(int* nums, int numsSize){
 }
 
 int main(){
-    // Test Case 1
+    /*
+     * Test Case 1: Input contains duplicate
+     * Expected: true (1)
+     */
     int nums1[] = {1, 2, 3, 1};
     int nums1_size = 4;
-    
-    printf("--- Test Case 1 ---\n");
-    printf("Input: [1, 2, 3, 1]\n");
     bool result1 = containsDuplicate(nums1, nums1_size);
-    printf("Expected: PASS (Duplicate exists)\n");
-    printf("Result:   %s\n\n", result1 ? "PASS" : "FAIL");
 
-    // Test Case 2
+    printf("nums1 is: [1, 2, 3, 1]\n");
+    printf("expected result1 is: 1 (true)\n");
+    printf("actual result1 is: %d\n", result1);
+
+    if (result1 == 1){
+        printf("PASS\n");
+    }else{
+        printf("FAIL\n");
+    }
+
+    printf("\n"); // Just for formatting
+
+    /*
+     * Test Case 2: Input contains all distinct elements
+     * Expected: false (0)
+     */
     int nums2[] = {1, 2, 3, 4, 5};
     int nums2_size = 5;
-
-    printf("--- Test Case 2 ---\n");
-    printf("Input: [1, 2, 3, 4, 5]\n");
     bool result2 = containsDuplicate(nums2, nums2_size);
-    printf("Expected: PASS (No duplicates)\n");
-    // Note: In C, false is 0. If result is 0 (false), it matches expectation.
-    printf("Result:   %s\n", !result2 ? "PASS" : "FAIL");
+
+    printf("nums2 is: [1, 2, 3, 4, 5]\n");
+    printf("expected result2 is: 0 (false)\n");
+    printf("actual result2 is: %d\n", result2);
+
+    if (result2 == 0){
+        printf("PASS\n");
+    }else{
+        printf("FAIL\n");
+    }
 
     return 0;
 }
